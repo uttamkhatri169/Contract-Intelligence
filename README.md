@@ -252,6 +252,9 @@ ClauseCraft/
 - PDF and DOCX parsing support implemented
 - Basic contract text extraction and display flow verified
 - Robust PDF loading fallback added to avoid startup failures when PyMuPDF is unavailable or interrupted
+- Vector database and embedding flow implemented for contract chunk retrieval
+- FAISS-compatible vector storage added with a safe fallback for environments where the package is unavailable
+- Sample execution verified successfully with the NDA contract flow
 
 ### How to Run
 
