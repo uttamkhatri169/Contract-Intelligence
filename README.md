@@ -248,6 +248,28 @@ ClauseCraft/
 ### Completed
 
 - Repository initialized
+- End-to-end contract ingestion pipeline added
+- PDF and DOCX parsing support implemented
+- Basic contract text extraction and display flow verified
+- Robust PDF loading fallback added to avoid startup failures when PyMuPDF is unavailable or interrupted
+
+### How to Run
+
+1. Create and activate a virtual environment
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run the sample pipeline:
+   ```bash
+   python main.py
+   ```
+
+### Notes
+
+- The project now supports reading the bundled NDA sample from the data folder.
+- If PyMuPDF fails to import, the application will gracefully fall back to a secondary PDF reader path so the contract can still be processed.
+- The repository is ready for further enhancements such as OCR, RAG, extraction, and evaluation modules.
 - Project architecture designed
 - Folder structure organized
 - Development environment configured

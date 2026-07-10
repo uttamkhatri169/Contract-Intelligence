@@ -3,6 +3,7 @@ uvicorn
 streamlit
 
 pymupdf
+pypdf
 python-docx
 pytesseract
 Pillow
