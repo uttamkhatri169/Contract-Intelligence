@@ -43,6 +43,7 @@ class PDFParser(BaseParser):
             paragraphs = [p.strip() for p in text.split("\n") if p.strip()]
 
             pages.append({
+                "document_name": self.document_name,
                 "page": page_number + 1,
                 "paragraphs": paragraphs
             })
@@ -57,6 +58,7 @@ class PDFParser(BaseParser):
             paragraphs = [p.strip() for p in text.split("\n") if p.strip()]
 
             pages.append({
+                "document_name": self.document_name,
                 "page": page_number + 1,
                 "paragraphs": paragraphs
             })

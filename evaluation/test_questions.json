@@ -1,0 +1,27 @@
+[
+    {
+        "question": "What is the termination clause?",
+        "expected_section": "6. Termination",
+        "expected_document": "NDA.pdf"
+    },
+    {
+        "question": "What is the governing law?",
+        "expected_section": "11. Governing Law",
+        "expected_document": "NDA.pdf"
+    },
+    {
+        "question": "Is there a non-compete clause?",
+        "expected_section": "10. Non-Compete",
+        "expected_document": "NDA.pdf"
+    },
+    {
+        "question": "How long is the agreement valid?",
+        "expected_section": "5. Term",
+        "expected_document": "NDA.pdf"
+    },
+    {
+        "question": "What are the confidentiality obligations?",
+        "expected_section": "2. Confidential Information",
+        "expected_document": "NDA.pdf"
+    }
+]

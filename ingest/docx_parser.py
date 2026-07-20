@@ -1,6 +1,6 @@
 from docx import Document
-from loader import save_json
-from base_parser import BaseParser
+from ingest.utils import save_json
+from ingest.base_parser import BaseParser
 
 
 class DOCXParser(BaseParser):
@@ -20,6 +20,7 @@ class DOCXParser(BaseParser):
 
         return [
             {
+                "document_name": self.document_name,
                 "page": 1,
                 "paragraphs": paragraphs
             }

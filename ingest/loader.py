@@ -1,16 +1,19 @@
 import os
 
-from pdf_parser import PDFParser
-from docx_parser import DOCXParser
+from ingest.pdf_parser import PDFParser
+from ingest.docx_parser import DOCXParser
 
 
 class DocumentLoader:
+    """
+    Factory class responsible for selecting
+    the correct parser based on file extension.
+    """
 
     def __init__(self, file_path):
         self.file_path = file_path
 
     def get_parser(self):
-
         extension = os.path.splitext(self.file_path)[1].lower()
 
         if extension == ".pdf":
@@ -21,7 +24,7 @@ class DocumentLoader:
 
         else:
             raise ValueError(
-                f"Unsupported file format: {extension}"
+                f"Unsupported file type: {extension}"
             )
 
     def load(self):
